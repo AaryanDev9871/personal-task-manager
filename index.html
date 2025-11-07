@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>🧠 Task Manager</h1>
+      <p id="dateTime" class="time"></p>
+    </div>
+    <button id="themeToggle" onclick="toggleTheme()">🌙</button>
+  </header>
+
+  <div class="container">
+
+    <section class="card">
+      <h2>Add To-Do</h2>
+      <input type="text" id="taskDescription" placeholder="Task description">
+      <select id="taskDifficulty">
+        <option value="Trivial">Trivial</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>
+      <input type="date" id="taskDueDate">
+      <input type="text" id="taskTags" placeholder="Tags (comma separated)">
+      <button onclick="addTask()">➕ Add Task</button>
+      <ul id="taskList"></ul>
+      <button class="clear" onclick="clearAllTasks('taskList')">🗑️ Clear To-Dos</button>
+    </section>
+
+    <section class="card">
+      <h2>Add Daily</h2>
+      <input type="text" id="dailyDescription" placeholder="Daily description">
+      <select id="dailyDifficulty">
+        <option value="Trivial">Trivial</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>
+      <input type="text" id="dailyTags" placeholder="Tags (comma separated)">
+      <button onclick="addDaily()">➕ Add Daily</button>
+      <ul id="dailyList"></ul>
+      <button class="clear" onclick="clearAllTasks('dailyList')">🗑️ Clear Dailies</button>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© made by <span>Aaryan Dev Shridhar</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
