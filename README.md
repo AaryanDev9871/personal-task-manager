@@ -29,6 +29,9 @@ JavaScript (ES6)	Interactivity and dynamic behavior
 📂 Project Structure
 Personal Task Manager/
 │
-├── index.html          # Main HTML file
-├── styles.css          # CSS for styling
-└── script.js           # JavaScript logic
+├── index.html       # Main HTML file
+├── styles.css        # CSS for styling
+└── script.js         # JavaScript logic
+
+🔗 **Live Demo:** [View Project](https://aaryandev9871.github.io/personal-task-manager/)
+
